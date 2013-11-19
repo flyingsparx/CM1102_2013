@@ -10,9 +10,9 @@ All code in this repository is un-licensed so please feel free to copy it and ch
 
 
 The repository covers examples of;
-    * HTML
-    * CSS
-    * PHP
-    * MySQL
+* HTML
+* CSS
+* PHP
+* MySQL
 
 Please refer to individual sub-dirctories for more information.
