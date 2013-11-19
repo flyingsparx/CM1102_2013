@@ -9,6 +9,9 @@ Licensing
 All code in this repository is un-licensed so please feel free to copy it and change it as you need.
 
 
+Contents
+---------
+
 The repository covers examples of;
 * HTML
 * CSS

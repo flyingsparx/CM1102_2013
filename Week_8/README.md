@@ -9,10 +9,10 @@ This directory contains simple demonstrations and examples mainly covering the b
 When using the examples, be sure to alter the database connection information to use your own user account and your own database running on the correct server.
 
 In particular, examples include;
-    * Connecting to a MySQL database
-    * Creating tables
-    * Inserting data
-    * Querying data to show on a web-page
+* Connecting to a MySQL database
+* Creating tables
+* Inserting data
+* Querying data to show on a web-page
 
 
 The `simple/` directory
