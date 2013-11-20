@@ -16,29 +16,29 @@
 
     /* Insert some data to this new table */
     mysqli_query($con,"INSERT INTO house VALUES (
-                20,
-                'Rhymney Street',
-                580.99,
-                3
-                )");
+                    20,
+                    'Rhymney Street',
+                    580.99,
+                    3
+                    )");
     mysqli_query($con,"INSERT INTO house VALUES (
-                36,
-                'Senghennydd Road',
-                350.00,
-                2
-                )");    
+                    36,
+                    'Senghennydd Road',
+                    350.00,
+                    2
+                    )");    
     mysqli_query($con,"INSERT INTO house VALUES (
-                87,
-                'Rhymney Street',
-                278.50,
-                1
-                )");
+                    87,
+                    'Rhymney Street',
+                    278.50,
+                    1
+                    )");
     mysqli_query($con,"INSERT INTO house VALUES (
-                41,
-                'Cathays Terrace',
-                1180.99,
-                5
-                )");
+                    41,
+                    'Cathays Terrace',
+                    1180.99,
+                    5
+                    )");
 
 
     /* Query the database in different ways */

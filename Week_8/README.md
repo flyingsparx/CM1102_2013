@@ -19,10 +19,10 @@ The `simple/` directory
 --------------------
 
 The directory `simple/` includes a series of scripts covering database connection, creating tables, inserting data and querying.
-The file `combined.php` combines all of these ideas into one script to make it more clear how they can be used together/
+The file `combined.php` combines all of these ideas into one script to make it more clear how they can be used together.
 
 
 The `example/` directory
 ------------------------
 
-This includes an example situation, using the same database and table as in `simple`, to demonstrate how to display relevant information on a web-page and for using HTML forms for posting data to PHP to interface with the MySQL database.
+This includes an example situation, using the same database and table as in `simple/`, to demonstrate how to display relevant information on a web-page and for using HTML forms for posting data to PHP to interface with the MySQL database.

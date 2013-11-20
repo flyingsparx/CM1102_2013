@@ -16,11 +16,11 @@
 
     /* Insert our new data */
     mysqli_query($con, "INSERT INTO house VALUES(
-                $number,
-                '$street',
-                $price,
-                $bedrooms
-                )");
+                        $number,
+                        '$street',
+                        $price,
+                        $bedrooms
+                        )");
 
     /* Close the database connection */
     mysqli_close($con);

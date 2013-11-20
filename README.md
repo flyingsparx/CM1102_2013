@@ -6,7 +6,7 @@ A collection of simple demonstrations and examples to support the CM1102 Web App
 Licensing
 -----------
 
-All code in this repository is un-licensed so please feel free to copy it and change it as you need.
+All code in this repository is distributed without a license so please feel free to copy it and change it as you need.
 
 
 Contents
