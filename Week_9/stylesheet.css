@@ -1,0 +1,59 @@
+*{
+    font-family:'Helvetica Neue', 'Helvetica', 'sans-serif';
+}
+
+html{
+    width:100%;
+    height:100%;
+    background:white;
+}
+
+body{
+    width:70%;
+    padding:10px;
+    margin:30px auto;
+    border-radius:5px;
+    background:rgba(0,0,0,0.7);
+}
+
+h1{
+    color:white;
+    margin-bottom:40px;
+    font-weight:lighter;
+}
+
+p{
+    color:rgba(250,250,250,0.8);
+}
+
+a:link{color:white;}
+a:visited{color:white;}
+a:hover{color:red;}
+
+ul{
+    width:100%;
+    margin:20px auto;
+    display:block;
+}
+
+ul li{
+    background:white;
+    width:200px;
+    border-radius:5px;
+    display:inline-block;
+    margin:10px;
+    padding:10px;
+}
+
+ul li p{
+    color:blue;
+}
+
+ul li p a:link{color:red;}
+ul li p a:visited{color:red;}   
+
+ul li img{
+    height:100px;
+    display:block;
+    margin:20px auto;
+}
