@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Shopping Basket</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="extra/stylesheet.css" />
     </head>
     <body>
         <h1>This is your shopping basket</h1>
@@ -24,26 +24,40 @@
                 }                
             }
             if(count($basket) == 0){
-                echo '<p>Your shopping basket is empty! <a href="product_list.php">View products</a>.';
+                echo '<p>Your shopping basket is empty! <a href="store.php">View products</a>.';
             }
             else{
-                echo '<p><a href="product_list.php">Continue shopping</a></p>';
+                echo '<p><a href="store.php">Continue shopping</a></p>';
             }
         ?>
         
        
         <ul>
             <?
+                $total_price = 0.0;
                 for($i = 0; $i < count($basket); $i++){
                     echo "<li>";
                     echo "<h2>".$basket[$i]->name."</h2>";
+                    echo "<p><i>&pound;".$basket[$i]->price."</i></p>";
                     echo "<img src='".$basket[$i]->image."'/>";
-                    echo "<p><a href='remove_from_basket.php?id=".$basket[$i]->id."'>Remove from basket</a></p>";
+                    echo "<p><a href='extra/remove_from_basket.php?id=".$basket[$i]->id."'>Remove from basket</a></p>";
                     echo "</li>";
+                    $total_price = $total_price + $basket[$i]->price;
                 }
 
             ?>
         </ul>
+    <p>TOTAL COST = &pound;<? echo $total_price; ?> <button id="pay">Checkout</button></p>
+
+    <script>
+        var pay_button = document.getElementById("pay");
+        pay_button.onclick = pay;
+
+        function pay(){
+            window.location = "pay.php";
+        }
+    </script>
+
     </body>
 </html>
 

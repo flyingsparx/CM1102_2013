@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Shop products</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="extra/stylesheet.css" />
     </head>
     <body>
         <h1>Please browse through our products</h1>
@@ -20,7 +20,7 @@
                     $basket[] = $product->product_id;
                 }                
 
-                echo '<p><a href="shopping_basket.php">Your basket ('.count($basket).')</a></p>';
+                echo '<p><a href="basket.php">Your basket ('.count($basket).')</a></p>';
             }
         ?>
         
@@ -30,12 +30,13 @@
             while($product = $result->fetch_object()){
                 echo '<li>';
                 echo '<h2>'.$product->name.'</h2>';
+                echo "<p><i>&pound;".$product->price."</i></p>";
                 echo '<img src="'.$product->image.'" />';
                 if(in_array($product->id, $basket)){
                     echo '<p>This item is in your basket</p>';
                 }
                 else{
-                    echo '<p><a href="add_to_basket.php?id='.$product->id.'">Add to basket</a></p>';
+                    echo '<p><a href="extra/add_to_basket.php?id='.$product->id.'">Add to basket</a></p>';
                 }
                 echo '</li>';
             };

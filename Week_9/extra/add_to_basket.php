@@ -19,6 +19,6 @@
     mysqli_close($con);
 
    setcookie("shop_cookie", $user_id);
-   header('Location: product_list.php');
+   header('Location: ../store.php');
 
 ?>
