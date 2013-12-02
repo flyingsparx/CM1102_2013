@@ -1,0 +1,52 @@
+*{
+    font-family:'Helvetica Neue', 'Helvetica';
+}
+
+html{
+    background:rgba(0,0,0,0.8);
+}
+
+body{
+    width:70%;
+    margin:30px auto;
+    padding:20px;
+}
+
+h1{
+    font-weight:lighter;
+    color:orange;
+}
+
+h2{
+    font-weight: lighter;
+    color:orange;
+}
+
+p{
+    color:white;
+}
+
+a:link{text-decoration:none;color:rgba(200,200,200,0.5);}
+a:visited{text-decoration:none;color:rgba(200,200,200,0.5);}
+a:hover{text-decoration:none;color:orange;}
+
+table{
+    width:100%;
+    border-top:1px solid rgba(250,250,250,0.3);
+    padding-top:10px;
+}
+
+tr{
+    width:30%;
+}
+
+th{
+    color:orange;
+    font-weight:lighter;
+}
+
+td{
+    text-align:center;
+    color:white;
+    font-style:italic;
+}    
