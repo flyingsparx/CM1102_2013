@@ -13,6 +13,8 @@ As before, this top-most directory contains the single out-ward facing web-page,
 If successful, the page will be reloaded and display a table of the users who have visited, along with their visitor count and last visit time.
 Every time the page is visited (or refreshed) the counter for that particular user will be incremented.
 
+The file `slideshow.html` is a one-off file demonstrating a simple image slideshow implementation using plain ol' JavaScript.
+
 The `extra/` directory contains the following:
 * `stylesheet.css` - styles for the webpage
 * `create_tables.css` - initialise the tables in the database

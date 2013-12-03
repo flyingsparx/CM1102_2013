@@ -1,0 +1,47 @@
+<!--
+
+    An implementation of a very simple slideshow in JavaScript.    
+
+-->
+
+<html>
+    <head>
+        <title>Simple JS Slideshow</title>
+        <style>
+            img{
+                width:300px;
+            }
+        </style>    
+    </head>
+    <body>
+
+        <button id="next_image">Show next Image</button>
+        <br /><br />
+
+        <img src="cu_logo.jpg" id="image" alt="slideshow image" />
+
+        <script>
+            // List the image files in an array to be shown in the slideshow
+            var images = ['image_1.png','image_2.png','image_3.png'];
+            // Initialise the initial index of the array
+            var current_image_index = 0;
+            
+            // Retrieve relevant objects from the DOM
+            var button = document.getElementById("next_image");
+            var image = document.getElementById("image");
+            // Bind an onclick function to the button
+            button.onclick = swap_image;
+
+            function swap_image(){
+                // Select the next image in the array
+                current_image_index++;
+                // If past end of array, go back to start
+                if(current_image_index >= images.length){
+                    current_image_index = 0;
+                }
+                // Update the image element with the new file name
+                image.src = images[current_image_index];
+            }            
+        </script>    
+    </body>
+</html>
