@@ -18,7 +18,7 @@
                         )");
     mysqli_close($con);
 
-   setcookie("shop_cookie", $user_id);
+   setcookie("shop_cookie", $user_id, time()+10000,"/");
    header('Location: ../store.php');
 
 ?>
